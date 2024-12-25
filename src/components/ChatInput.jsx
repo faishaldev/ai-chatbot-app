@@ -8,6 +8,7 @@ export default function ChatInput({
   chatResponses,
   setChatResponses,
   action,
+  isLoading,
 }) {
   return (
     <div className="p-5 flex gap-5 items-center">
@@ -24,6 +25,7 @@ export default function ChatInput({
         chatResponses={chatResponses}
         setChatResponses={setChatResponses}
         action={action}
+        isLoading={isLoading}
       />
     </div>
   );
@@ -35,4 +37,5 @@ ChatInput.propTypes = {
   chatResponses: PropTypes.array,
   setChatResponses: PropTypes.func,
   action: PropTypes.func,
+  isLoading: PropTypes.bool,
 };

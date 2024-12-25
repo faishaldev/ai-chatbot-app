@@ -9,6 +9,7 @@ export default function ChatbotInterface({
   chatResponses,
   setChatResponses,
   action,
+  isLoading,
 }) {
   return (
     <div className="bg-white w-full max-w-[560px] flex flex-col">
@@ -20,6 +21,7 @@ export default function ChatbotInterface({
         chatResponses={chatResponses}
         setChatResponses={setChatResponses}
         action={action}
+        isLoading={isLoading}
       />
     </div>
   );
@@ -31,4 +33,5 @@ ChatbotInterface.propTypes = {
   chatResponses: PropTypes.array,
   setChatResponses: PropTypes.func,
   action: PropTypes.func,
+  isLoading: PropTypes.bool,
 };

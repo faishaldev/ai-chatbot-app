@@ -17,6 +17,7 @@ export default function InputText({
             ...chatResponses,
             { type: 'user', message: promptInputValue },
           ]);
+          setPromptInputValue('');
           action();
         }
       }}

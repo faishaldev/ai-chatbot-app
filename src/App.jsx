@@ -42,6 +42,7 @@ function App() {
         chatResponses={chatResponses}
         setChatResponses={setChatResponses}
         action={getGeminiAIResponse}
+        isLoading={isLoading}
       />
     </div>
   );
